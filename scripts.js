@@ -54,7 +54,7 @@ let displayMeaning = (data) => {
             let orgText = document.createElement('p');
             let phonHead = document.createElement('h4');
             let phonLink = document.createElement('a');
-           
+            let current = def[i];
             
             defText.setAttribute('id', 'defText');
             orgText.setAttribute('id', 'orgText');
