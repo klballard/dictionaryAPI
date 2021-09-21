@@ -1,0 +1,30 @@
+html {
+    text-align: center;
+}
+
+#displayResults {
+    display: flex;
+    flex-direction: column;
+}
+
+#defDiv {
+    border: solid 2px black;
+    border-radius: .5rem;
+    max-width: 40%;
+    min-width: 40%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: .2rem;
+    margin-top: .2rem;
+    font-style: italic;
+}
+
+#defText::first-letter, #orgText::first-letter {
+    text-transform: capitalize;
+}
+
+footer {
+    font-size: .8rem;
+    padding-top: 1rem;
+}
