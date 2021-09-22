@@ -25,6 +25,10 @@ async function findMeaning(e) {
 let displayMeaning = (data) => {
      console.log(data);
 
+     while (resultsDisplay.firstChild) {
+        resultsDisplay.removeChild(resultsDisplay.firstChild);
+    }
+
     // console.log(data[0]);
     // console.log(data[0].meanings);
     // console.log(data[0].meanings[0]);
