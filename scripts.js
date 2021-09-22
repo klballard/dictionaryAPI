@@ -47,13 +47,13 @@ let displayMeaning = (data) => {
         <h4>No result found. Check your spelling, please!</h4>`
     } else {
         for (let i = 0; i < numberOfDefs; i++) {
-            let defDiv = document.createElement('div');
-            let defHead = document.createElement('h3');
-            let defText = document.createElement('p');
-            let orgHead = document.createElement('h4');
-            let orgText = document.createElement('p');
-            let phonHead = document.createElement('h4');
-            let phonLink = document.createElement('a');
+            let defDiv = document.createElement('div'); //!
+            let defHead = document.createElement('h3'); //!
+            let defText = document.createElement('p');  //!
+            let orgHead = document.createElement('h4'); //!
+            let orgText = document.createElement('p');  //!
+            let phonHead = document.createElement('h4');//!
+            let phonLink = document.createElement('a'); //!
             let current = def[i];
             
             defText.setAttribute('id', 'defText'); //!
@@ -78,7 +78,7 @@ let displayMeaning = (data) => {
             orgHead.style.textDecoration = 'underline';
             phonHead.style.textDecoration = 'underline';
 
-            resultDisplay.appendChild(defDiv);
+            resultDisplay.appendChild(defDiv); //!
             defDiv.appendChild(defHead);
             defDiv.appendChild(defText);
             defDiv.appendChild(orgHead);
