@@ -33,7 +33,7 @@ let displayMeaning = (data) => {
     // console.log(data[0].meanings[0]);
     // console.log(data[0].meanings[0].definitions);
     // console.log(data[0].meanings[0].definitions[0]);
-    //console.log(data[0].meanings[0].definitions[0].definition);
+    // console.log(data[0].meanings[0].definitions[0].definition);
     
 
     let def = data;
@@ -41,10 +41,10 @@ let displayMeaning = (data) => {
     console.log(numberOfDefs);
    
 
-    if (def.length === 0 || def.length == undefined){
+    if (def.length === 0 || def.length === undefined){
         console.log('no results');
-        resultDisplay.innerHTML = ` //!
-        <h4>No result found. Check your spelling, please!</h4>`
+        resultDisplay.innerHTML = //!
+        `<h4>No result found. Check your spelling, please!</h4>`
     } else {
         for (let i = 0; i < numberOfDefs; i++) {
             let defDiv = document.createElement('div'); //!
