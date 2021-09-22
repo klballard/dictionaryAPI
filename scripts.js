@@ -42,7 +42,7 @@ let displayMeaning = (data) => {
     console.log(numberOfDefs);
    
 
-    if (def.length === 0 || def.length == undefined){
+    if (def.length === 0 || def.length === undefined){
         console.log('no results');
         resultsDisplay.innerHTML = "
         <h4>No result found. Check your spelling, please!</h4>"
