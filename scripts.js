@@ -5,7 +5,7 @@ const searchWord = document.getElementsByClassName('search');
 const resultDisplay = document.getElementsByClassName('displayResults');
 const form = document.getElementsByClassName('form');
 
-form.addEventListener('submit', findMeaning);
+form.addEventListener('submit', findMeanings);
 
 
 async function findMeaning(e) {
@@ -40,8 +40,8 @@ let displayMeaning = (data) => {
 
     if (def.length === 0 || def.length == undefined){
         console.log('no results');
-        resultsDisplay.innerHTML = `
-        <h4>No result found. Check your spelling, please!</h4>`
+        resultsDisplay.innerHTML = "
+        <h4>No result found. Check your spelling, please!</h4>"
     } else {
         for (let i = 0; i < numberOfDef; i++) {
             let defDiv = document.createElement(div);
@@ -59,7 +59,7 @@ let displayMeaning = (data) => {
 
 
             defHead.text.Content = 'Definition:';
-            defText.textContent = current.meanings[0].definitions[0].definition;
+            defText.textContent = current.meaning[0].definition[0].definition;
 
             orgHead.textContent = 'Origin:';
             orgText.textContent = current.origin;
@@ -84,16 +84,4 @@ let displayMeaning = (data) => {
             defDiv.appendChild(phonLink);
         }
     }
-
-    // let def = data[0];
-    // let definition = def.meanings[0].definitions[0].definition;
-    // resultDisplay.innerHTML = `
-    // <h3>Definition: </h3>
-    // <p>${definition.charAt(0).toUpperCase() + definition.slice(1)}</p>
-    // <h3>Origin: </h3>
-    // <p>${def.origin}</p>
-    // <h3>Phonetic: </h3>
-    // <a href=${def.phonetics[0].audio} target="_blank" rel="noreferrer noopener">${def.phonetic}</a>
-    // `
-
 }
